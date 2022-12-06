@@ -10,15 +10,12 @@ body{
   margin: 0px;
   padding: 0px;
 }
-
 h1 {
   font-size: 60px;
 }
-
 h2 {
   font-size: 40px;
 }
-
 p{
   font-size: 20px;
   color: #D0B08A;
@@ -33,7 +30,6 @@ button {
   font-weight: bold;
   font-size: 20px;
   box-shadow: 0px 5px 30px black;
-  
 }
 button:hover{
   opacity: 0.9;
@@ -49,7 +45,6 @@ button:active{
   background-color: #B08E69; color: #3B1505;
   padding: 15px; padding-left: 60px; padding-right: 60px;
 }
-
 /* styling af navigationsbar til mobil */
 .navigation ul {  
   background-color: #121701;
@@ -83,20 +78,37 @@ button:active{
   color: #D0B08A;
   font-size: 12px;
 }
-
-
-/* styling af section 1 - kort præsentation */
+/* Sektion 1 - styling af - kort præsentation */
 .introduktion {
   background-color: #3B1505;
   padding: 35px;
 }
+/* Sektion 2 - styling af div med bagrundsbillede */
+.ebbe-baggrund {
+  width: 100%;
+  height: 600px;
+  background: url('billeder/ebbe_sh_to-min.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* styling af billede i div element */
+/* Sektion - 3 - styling af mit arbejde box */
+
+.mywork {
+  background-color: #5D2108;
+  padding: 35px;
+  margin-left: 20%;
+  position: relative;
+  top: -70px;
+}
+
+/* billede ved footer */
 .skov-img {
   width: 100%;
   height: auto;
 }
-
 /* styling af footer*/
 .foot {
   background-color: #D1CBBA;
@@ -109,13 +121,13 @@ button:active{
   font-size: 12px;
   line-height: 1.5;
 }
-
 .foot ul {
   list-style: none;
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex: 1;
+  padding-inline-start: 0px;
 }
 
 
