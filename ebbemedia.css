@@ -1,7 +1,6 @@
 *{
   box-sizing: border-box;
 }
-
 /* Generelle styles i */
 body{
   background-color: #121701;
@@ -16,13 +15,15 @@ h1 {
 h2 {
   font-size: 40px;
 }
+h3 {
+  font-size: 30px;
+}
 p{
   font-size: 20px;
   color: #D0B08A;
   letter-spacing: 1px;
   line-height: 2;
 }
-
 /* Styles af knapper */
 button {
   border-radius: 30px;
@@ -78,6 +79,7 @@ button:active{
   color: #D0B08A;
   font-size: 12px;
 }
+/* Header - styling af header elementet*/
 /* Sektion 1 - styling af - kort præsentation */
 .introduktion {
   background-color: #3B1505;
@@ -93,9 +95,7 @@ button:active{
   align-items: center;
   justify-content: center;
 }
-
 /* Sektion - 3 - styling af mit arbejde box */
-
 .mywork {
   background-color: #5D2108;
   padding: 35px;
@@ -103,7 +103,36 @@ button:active{
   position: relative;
   top: -70px;
 }
+/*sektion - 5 - styling af learn more box med knap*/ 
+.learnmore {
+  background-color: #1F2417;
+  padding: 40px;
+  padding-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 35px;
+  
+}
 
+.contact-me {
+  background-color: #3B1505;
+  font-style: italic;
+  padding: 20px;
+  display: flex;
+  max-height: 300px;
+}
+.contact-me > {
+  flex: 1;
+}
+.ebbe-op{
+  width: 270px;
+  height: 100%;
+  position: relative;
+  top: -108px;
+}
 /* billede ved footer */
 .skov-img {
   width: 100%;
@@ -130,16 +159,9 @@ button:active{
   padding-inline-start: 0px;
 }
 
-
-
-
-
- 
-
 @media (min-width:601px) {
   /* style changes when the screen gets larger */
 }
-
 @media (min-width:901px) {
       /* And even larger */
   }
