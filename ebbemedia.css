@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Generelle styles i */
+body{
+  background-color: #121701;
+  font-family: botanika;
+  color: #D0B08A;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+  color: #D0B08A;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+/* Styles af knapper */
+button {
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0px 5px 30px black;
+  
+}
+button:hover{
+  opacity: 0.9;
+} 
+button:active{
+  opacity: 0.8;
+}
+.mywork-button {
+  background-color: #B08E69; color: #3B1505;
+  padding: 15px; padding-left: 80px; padding-right: 80px;
+}
+.learnmore-button {
+  background-color: #B08E69; color: #3B1505;
+  padding: 15px; padding-left: 60px; padding-right: 60px;
+}
+
+/* styling af navigationsbar til mobil */
+.navigation ul {  
+  background-color: #121701;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+.navigation li {
+  font-weight: bold;
+  background-color: #2D3421;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  flex: 1;
+}
+.navigation li:hover {
+  opacity: 0.8;
+}
+.navigation li:active {
+  opacity: 0.4;
+}
+.navigation a {
+  color: #D0B08A;
+  font-size: 12px;
+}
+
+
+/* styling af section 1 - kort præsentation */
+.introduktion {
+  background-color: #3B1505;
+  padding: 35px;
+}
+
+/* styling af billede i div element */
+.skov-img {
+  width: 100%;
+  height: auto;
+  
+}
+
+/* styling af footer*/
+.foot {
+  background-color: #D1CBBA;
+  color: #5D2108;
+  padding: 35px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.foot ul {
+  list-style: none;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+
+
+
+
+ 
+
+@media (min-width:601px) {
+  /* style changes when the screen gets larger */
+}
+
+@media (min-width:901px) {
+      /* And even larger */
+  }
