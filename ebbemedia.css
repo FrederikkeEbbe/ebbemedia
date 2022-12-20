@@ -9,7 +9,6 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
 h1 {
   font-size: 60px;
   font-family: headfont;
@@ -98,7 +97,7 @@ button {
   display: flex;
   height: 3px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: .2s ease-out;
   width: 50px;
   border-radius: 25px;
 }
@@ -198,6 +197,16 @@ a.logo:active {
   width: 100%;
   height: 500px;
   background: url('billeder/haand_bold-min.jpg');
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-billede-port {
+  width: 100%;
+  height: 500px;
+  background: url('billeder/to_bold-min.jpg');
   background-size: cover;
   background-position: right;
   display: flex;
@@ -468,6 +477,16 @@ flex-direction: column;
 align-items: center;
 align-content: center;
 }
+.foot-alm{
+position: relative;
+color: #2E2A28;
+background-color: #BAB1AA;
+padding: 40px 0px 15px 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+}
 .fodtext {
   padding: 0px;
   margin: 0px;
@@ -482,7 +501,13 @@ p.fodtext {
   width: auto;
   background-color:#BAB1AA;
   padding: 70px 0px 15px 0px;
- 
+}
+.bund-box-alm {
+  position: relative;
+  height: 50px;
+  width: auto;
+  background-color:#BAB1AA;
+  padding: 70px 0px 15px 0px;
 }
 .bund-box-text {
 font-size: 10px;
@@ -501,11 +526,88 @@ a.fodlink:link, a.fodlink:visited {
 a.fodlink:hover, a.fodlink:active {
   opacity: 0.8;
 }
-@media (min-width:601px) {
-  /*responsivt design*/
+/* Overskrift*/
+.port-overskrift{
+  text-align: center;
+  background-color: #BAB1AA;
+  color: #2E2A28;
+  margin: 0px;
+  padding: 10px;
+  border-top: solid 2px #2E2A28;
+  border-bottom: solid 2px #2E2A28;
 }
 
-@media (min-width:901px) {
-      /*responsivt web*/
-
+/*Portfolio side ændringer Del 1*/
+.box-port-holder-et {
+  background-color: #7483C4;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.htre-port-et {
+  margin: 0;
+  color: #2E2A28;
+}
+.pic-port-holder {
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+}
+.pic-port {
+  width: 100%;
+}
+.p-port-et {
+color: #2E2A28;
+}
+/*Portfolio side ændringer Del 2*/
+.box-port-holder-to {
+  background-color: #2E2A28;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.htre-port-to {
+  margin: 0;
+  color: #BAB1AA;
+}
+.pic-port {
+  width: 100%;
+}
+.p-port-to {
+color: #BAB1AA;
+}
+/*Portfolio side ændringer Del 3*/
+.box-port-holder-tre {
+  background-color: #BAB1AA;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.htre-port-tre {
+  margin: 0;
+  color: #001157;
+}
+.pic-port {
+  width: 100%;
+}
+.p-port-tre {
+color: #001157;
+}
+@media (min-width:770px) {
+  .flex-produkt{
+    display: flex;
+    flex-direction: row;
   }
+}
+@media (min-width:570px) {
+  #flex-foer{
+    display: flex;
+    flex-direction: row;
+  }
+}
