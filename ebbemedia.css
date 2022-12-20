@@ -209,11 +209,35 @@ a.logo:active {
   background-color: rgba(0,0,0,.45);
   padding: 20px;
 }
+/*Responsivt design*/
+@media (min-width:770px) {
+  /*responsivt tablet*/
+  .top-text-billede{
+    color: #7483C4;
+    background-color: rgba(0,0,0,.45);
+    padding: 20px 100% 20px 100%;
+    font-size: 100px;
+}
+}
+@media (min-width:980px) {
+  /*responsivt web*/
+  .top-text-billede{
+    color: #7483C4;
+    background-color: rgba(0,0,0,.45);
+    padding: 20px 100% 20px 100%;
+    font-size: 150px;
+}
+}
 /*baggrunds lag style*/
 .baggrunds-lag {
   background: url('billeder/baggrund-min.png');
   background-size: cover;
   background-position: bottom;
+}
+.bold-lag {
+  background: url('billeder/bold_koelle-min.jpg');
+  background-size: cover;
+  background-position: right;
 }
 /* Sektion 2 - info om portfolio - knap der redirrecter og billede*/
 .portfolio-direkt {
@@ -242,19 +266,47 @@ a.logo:active {
 .portfolio-knap:active {
   opacity: .7;
 }
-
 .portfolio-teaser {
   background-color: #001157;
   color: #7483C4;
-  padding: 25px;
+  padding: 20px;
   margin-left: 10%;
   position: relative;
   top: -120px;
 }
+.portfolio-teaser > p, .portfolio-teaser > h3 {
+  color: #7483C4;
+  padding: 20px;
+  margin: 0px;
+}
+/* Sektion 2 responsiv*/
+@media (min-width:770px) {
+  .portfolio-direkt {
+    float: left;
+    width: 50%;
+  }
+  .bold-lag {
+    width: 50%;
+    float: right;
+    height: 600px;
+  }
+  .portfolio-teaser {
+    top: 0px;
+    margin: 0px;
+    height: 560px;
+  }
+  .portfolio-teaser > p, .portfolio-teaser > h3 {
+    padding: 10px;
+    margin: 0px;
+}
+.port-text {
+  font-size: 18px;
+}
+}
 /* Sektion 3 - om mig sektion. Knap der fører til ny side*/
 .ommig-lag {
   background-color: rgba(0,0,0,.45);
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,8 +348,7 @@ a.logo:active {
 }
 .kontakt-info {
   background-color: #001157;
-  color: #EFA570;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,8 +365,8 @@ a.logo:active {
 .kontakt-link {
   background-color:#EFA570;
   color: #001157;
-  padding: 40px;
-  padding-bottom: 90px;
+  padding: 20px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,14 +377,7 @@ a.logo:active {
   padding: 10px;
   margin: 0px;
 }
-.kontakt-citat {
-  display: flex;
-  align-items: center;
-  font-style: italic;
-}
-.kontakt-citat > p {
-  color: #7483C4;
-}
+/*knapper i sektionen*/
 .kontakt-blaa {
   background-color: #001157;
   color: #7483C4;
@@ -343,24 +387,53 @@ a.logo:active {
   color: #001157;
 }
 .kontakt-orange {
-  background-color: #CC5600;
-  color: #EFA570;
-}
-.kontakt-orange:hover{
   background-color: #EFA570;
   color: #CC5600;
+}
+.kontakt-orange:hover{
+  background-color: #CC5600;
+  color: #EFA570;
 }
 .kontakt-orange:active, .kontakt-blaa:active {
   opacity: .8;
 }
+/*responsiv sektion 4*/
+@media (min-width:770px) {
+  .kontakt-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+  }
+  .kontakt-link {
+  padding: 20px;
+  }
+}
+/*box med forskudt billede der kigger på knap*/
+.kontakt-citat {
+  display: flex;
+  font-style: italic;
+  margin: 0px;
+  padding: 0px;
+}
+.kontakt-citat > p {
+  color: #7483C4;
+}
 .ebbe-op{
-  width: 270px;
+  width: 210px;
   height: 100%;
   position: relative;
-  top: -108px;
+  top: -95px;
+}
+@media (min-width:770px) {
+  .ebbe-op {
+    width: 130px;
+  }
 }
 /* Footer */
 .foot {
+position: relative;
+top: -95px;
 color: #2E2A28;
 background-color: #BAB1AA;
 padding: 15px 0px 15px 0px;
@@ -377,15 +450,18 @@ p.fodtext {
   font-size: 15px;
 }
 .bund-box {
+  position: relative;
+  top: -95px; 
   height: 50px;
   width: auto;
-  background-color: #CC5600;
+  background-color:#2E2A28;
   padding: 15px 0px 15px 0px;
 }
 .bund-box-text {
 font-size: 10px;
 text-align: center;
 padding: 10px 0px 10px 0px;
+color: #CC5600;
 }
 /* a Links*/
 a.fodlink:link, a.fodlink:visited {
@@ -398,12 +474,11 @@ a.fodlink:link, a.fodlink:visited {
 a.fodlink:hover, a.fodlink:active {
   opacity: 0.8;
 }
-
-
-
 @media (min-width:601px) {
-  /* style changes when the screen gets larger */
+  /*responsivt design*/
 }
+
 @media (min-width:901px) {
-      /* And even larger */
+      /*responsivt web*/
+
   }
