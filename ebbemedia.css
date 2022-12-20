@@ -6,6 +6,8 @@ src: url(fonts/milkalte-font/Milkalte-4BmnK.otf)
 /* Generelt styleing*/
 body {
   background-color: #2E2A28;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -207,6 +209,12 @@ a.logo:active {
   background-color: rgba(0,0,0,.45);
   padding: 20px;
 }
+/*baggrunds lag style*/
+.baggrunds-lag {
+  background: url('billeder/baggrund-min.png');
+  background-size: cover;
+  background-position: bottom;
+}
 /* Sektion 2 - info om portfolio - knap der redirrecter og billede*/
 .portfolio-direkt {
   width: 100%;
@@ -234,6 +242,7 @@ a.logo:active {
 .portfolio-knap:active {
   opacity: .7;
 }
+
 .portfolio-teaser {
   background-color: #001157;
   color: #7483C4;
@@ -243,19 +252,28 @@ a.logo:active {
   top: -120px;
 }
 /* Sektion 3 - om mig sektion. Knap der fører til ny side*/
-.ommig-direkt {
+.ommig-lag {
+  background-color: rgba(0,0,0,.45);
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
 }
-.ommig-direkt > h3, h5 {
+.ommig-lag > h3, h5 {
   margin: 0px;
 }
-.ommig-direkt > img, p, a {
+.ommig-lag > h3 {
+  color: #7483C4;
+  margin-top: 40px;
+}
+.ommig-lag > h5 {
+  color: #BAB1AA;
+}
+.ommig-lag > img, p, a {
   margin: 0px;
   padding: 20px;
+  color: #BAB1AA;
 }
 .cut-arm {
   width: 300px;
@@ -272,7 +290,75 @@ a.logo:active {
 .ommig-knap:active {
  opacity: .7;
 }
-/* Sektion 4*/
+/* Sektion 4 produktbilleder på artikler m knap*/
+.kontakt-sec > img {
+  width: 100%;
+}
+.kontakt-info {
+  background-color: #001157;
+  color: #EFA570;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.kontakt-info > p, .kontakt-info > h4 {
+  color: #EFA570;
+  padding: 10px;
+  margin: 0px;
+}
+.kontakt-info > button {
+  align-content: center;
+}
+.kontakt-link {
+  background-color:#EFA570;
+  color: #001157;
+  padding: 40px;
+  padding-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.kontakt-link > p, .kontakt-link > h4 {
+  color: #001157;
+  padding: 10px;
+  margin: 0px;
+}
+.kontakt-citat {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+.kontakt-citat > p {
+  color: #7483C4;
+}
+.kontakt-blaa {
+  background-color: #001157;
+  color: #7483C4;
+}
+.kontakt-blaa:hover {
+  background-color: #7483C4;
+  color: #001157;
+}
+.kontakt-orange {
+  background-color: #CC5600;
+  color: #EFA570;
+}
+.kontakt-orange:hover{
+  background-color: #EFA570;
+  color: #CC5600;
+}
+.kontakt-orange:active, .kontakt-blaa:active {
+  opacity: .8;
+}
+.ebbe-op{
+  width: 270px;
+  height: 100%;
+  position: relative;
+  top: -108px;
+}
 /* Footer */
 .foot {
 color: #2E2A28;
@@ -314,38 +400,6 @@ a.fodlink:hover, a.fodlink:active {
 }
 
 
-
-
-/* Sektion 2 - styling af div med bagrundsbillede */
-.ebbe-baggrund {
-  width: 100%;
-  height: 600px;
-  background: url('billeder/ebbe_sh_to-min.png');
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*sektion - 5 - styling af learn more box med knap*/ 
-.learnmore {
-  background-color: #1F2417;
-  padding: 40px;
-  padding-bottom: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 35px;
-  
-}
-.ebbe-op{
-  width: 270px;
-  height: 100%;
-  position: relative;
-  top: -108px;
-}
 
 @media (min-width:601px) {
   /* style changes when the screen gets larger */
