@@ -49,11 +49,11 @@ button {
 .top-box {
   height: 60px;
   width: auto;
-  background-color: #CC5600;
+  background-color: #BAB1AA;
 }
 /* Navigation*/
 .navigation {
-  background-color: #2E2A28;
+  background-color: #BAB1AA;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -64,7 +64,7 @@ button {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #2E2A28;
+  background-color: #BAB1AA;
 }
 .navigation .logo {
   display: flex;
@@ -94,7 +94,7 @@ button {
 }
 /* Den midterste linje*/
 .navigation .menu-icon .navicon {
-  background: #CC5600;
+  background: #2E2A28;
   display: flex;
   height: 3px;
   position: relative;
@@ -105,7 +105,7 @@ button {
 /* De yderste linjer*/
 .navigation .menu-icon .navicon:before,
 .navigation .menu-icon .navicon:after {
-  background: #CC5600;
+  background: #2E2A28;
   content: '';
   display: flex;
   height: 100%;
@@ -149,10 +149,10 @@ button {
 }
 .navigation li a:hover,
 .navigation .menu-btn:hover {
-  background-color: #EFA570;
+  background-color: #7483C4;
 }
 a.navlink:link, a.navlink:visited {
-  color: #CC5600;
+  color: #2E2A28;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -163,7 +163,7 @@ a.navlink:active {
   opacity: 0.6;
 }
 a.logo:link, a.logo:visited {
-  color: #CC5600;
+  color: #2E2A28;
   padding: 8px;
   text-align: center;
   text-decoration: none;
@@ -171,7 +171,7 @@ a.logo:link, a.logo:visited {
 }
 a.logo:hover {
   opacity: 0.8;
-  background-color: #EFA570;
+  background-color: #7483C4;
 }
 a.logo:active {
   opacity: 0.6;
@@ -252,16 +252,15 @@ a.logo:active {
   position: relative;
 }
 .portfolio-knap {
-  background-color: #CC5600;
-  color: #EFA570;
+  background-color: #BAB1AA;
+  color: #2E2A28;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .portfolio-knap:hover {
-  background-color: #EFA570;
-  color: #CC5600;
+  background-color: #7483C4;
 }
 .portfolio-knap:active {
   opacity: .7;
@@ -342,7 +341,30 @@ a.logo:active {
 .ommig-knap:active {
  opacity: .7;
 }
-/* Sektion 4 produktbilleder på artikler m knap*/
+@media (min-width:980){
+  .portfolio-direkt {
+    float: left;
+    width: 50%;
+  }
+  .bold-lag {
+    width: 50%;
+    float: right;
+    height: 600px;
+  }
+  .portfolio-teaser {
+    top: 0px;
+    margin: 0px;
+    height: 560px;
+  }
+  .portfolio-teaser > p, .portfolio-teaser > h3 {
+    padding: 10px;
+    margin: 0px;
+}
+.port-text {
+  font-size: 18px;
+}
+}
+/* Sektion 4 artikler m knap*/
 .kontakt-sec > img {
   width: 100%;
 }
@@ -355,7 +377,7 @@ a.logo:active {
   flex-direction: column;
 }
 .kontakt-info > p, .kontakt-info > h4 {
-  color: #EFA570;
+  color: #BAB1AA;
   padding: 10px;
   margin: 0px;
 }
@@ -363,7 +385,7 @@ a.logo:active {
   align-content: center;
 }
 .kontakt-link {
-  background-color:#EFA570;
+  background-color:#BAB1AA;
   color: #001157;
   padding: 20px;
   padding-bottom: 60px;
@@ -387,12 +409,12 @@ a.logo:active {
   color: #001157;
 }
 .kontakt-orange {
-  background-color: #EFA570;
-  color: #CC5600;
+  background-color: #BAB1AA;
+  color: #2E2A28;
 }
 .kontakt-orange:hover{
-  background-color: #CC5600;
-  color: #EFA570;
+  background-color: #7483C4;
+  color: #2E2A28;
 }
 .kontakt-orange:active, .kontakt-blaa:active {
   opacity: .8;
@@ -403,7 +425,6 @@ a.logo:active {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
   }
   .kontakt-link {
   padding: 20px;
@@ -430,13 +451,18 @@ a.logo:active {
     width: 130px;
   }
 }
+@media (min-width:980){
+  .ebbe-op {
+    width: 100px;
+  }
+}
 /* Footer */
 .foot {
 position: relative;
 top: -95px;
 color: #2E2A28;
 background-color: #BAB1AA;
-padding: 15px 0px 15px 0px;
+padding: 40px 0px 15px 0px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -454,14 +480,15 @@ p.fodtext {
   top: -95px; 
   height: 50px;
   width: auto;
-  background-color:#2E2A28;
-  padding: 15px 0px 15px 0px;
+  background-color:#BAB1AA;
+  padding: 70px 0px 15px 0px;
+ 
 }
 .bund-box-text {
 font-size: 10px;
 text-align: center;
 padding: 10px 0px 10px 0px;
-color: #CC5600;
+color: #2E2A28;
 }
 /* a Links*/
 a.fodlink:link, a.fodlink:visited {
