@@ -1,90 +1,321 @@
-*{
-  box-sizing: border-box;
+/* Generelt */
+@font-face {
+font-family: 'headfont';
+src: url(fonts/milkalte-font/Milkalte-4BmnK.otf)
 }
-/* Generelle styles i */
-body{
-  background-color: #121701;
-  font-family: botanika;
-  color: #D0B08A;
-  margin: 0px;
-  padding: 0px;
+/* Generelt styleing*/
+body {
+  background-color: #2E2A28;
 }
+
 h1 {
   font-size: 60px;
+  font-family: headfont;
 }
 h2 {
-  font-size: 40px;
+  font-size: 50px;
+  font-family: headfont;
 }
 h3 {
+  font-size: 40px;
+  font-family: headfont;
+}
+h4 {
   font-size: 30px;
+  font-family: headfont;
 }
-p{
+h5 {
   font-size: 20px;
-  color: #D0B08A;
-  letter-spacing: 1px;
-  line-height: 2;
+  font-family: headfont;
 }
-/* Styles af knapper */
+p {
+  font-family: PT Serif; 
+  font-size: 20px;
+}
 button {
-  border-radius: 30px;
   border: none;
-  font-weight: bold;
+  padding: 15px 50px;
+  font-family: PT serif;
   font-size: 20px;
-  box-shadow: 0px 5px 30px black;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-button:hover{
-  opacity: 0.9;
-} 
-button:active{
-  opacity: 0.8;
+/* Header */
+/* top på mobil */
+.top-box {
+  height: 60px;
+  width: auto;
+  background-color: #CC5600;
 }
-.mywork-button {
-  background-color: #B08E69; color: #3B1505;
-  padding: 15px; padding-left: 80px; padding-right: 80px;
+/* Navigation*/
+.navigation {
+  background-color: #2E2A28;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
-.learnmore-button {
-  background-color: #B08E69; color: #3B1505;
-  padding: 15px; padding-left: 60px; padding-right: 60px;
-}
-/* styling af navigationsbar til mobil */
-.navigation ul {  
-  background-color: #121701;
-  list-style: none;
+.navigation ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #2E2A28;
+}
+.navigation .logo {
   display: flex;
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: headfont;
+  margin-left: 30px;
 }
-.navigation li {
-  font-weight: bold;
-  background-color: #2D3421;
-  padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+/* burger menuen */
+.navigation .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  font-family: PS Serif;
+  font-size: 15px;
+}
+/* burger menu ikonet */
+.navigation .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  margin-right: 30px;
+  float: right;
+}
+/* Den midterste linje*/
+.navigation .menu-icon .navicon {
+  background: #CC5600;
+  display: flex;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 50px;
+  border-radius: 25px;
+}
+/* De yderste linjer*/
+.navigation .menu-icon .navicon:before,
+.navigation .menu-icon .navicon:after {
+  background: #CC5600;
+  content: '';
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  border-radius: 25px;
+}
+/*afstand imellem top og bund ikoner*/
+.navigation .menu-icon .navicon:before {
+  top: 15px;
+}
+.navigation .menu-icon .navicon:after {
+  top: -15px;
+}
+/* burger menu knap */
+.navigation .menu-btn {
+  display: none;
+}
+.navigation .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* Styleing af link så de ikke er grimme*/
+.navigation li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.navigation li a:hover,
+.navigation .menu-btn:hover {
+  background-color: #EFA570;
+}
+a.navlink:link, a.navlink:visited {
+  color: #CC5600;
+  padding: 20px;
   text-align: center;
-  flex: 1;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 30px;
 }
-.navigation li:hover {
+a.navlink:active {
+  opacity: 0.6;
+}
+a.logo:link, a.logo:visited {
+  color: #CC5600;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.logo:hover {
+  opacity: 0.8;
+  background-color: #EFA570;
+}
+a.logo:active {
+  opacity: 0.6;
+}
+/* Responsiv menubar */
+@media (min-width: 770px) {
+  .navigation li {
+    float: left;
+  }
+  .navigation li a {
+    padding: 20px 30px;
+  }
+  .navigation .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navigation .menu-icon {
+    display: none;
+  }
+}
+/* Sektion 1 - index - billede m overskrift siden */
+.top-billede {
+  width: 100%;
+  height: 500px;
+  background: url('billeder/haand_bold-min.jpg');
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-text-billede{
+  color: #7483C4;
+  background-color: rgba(0,0,0,.45);
+  padding: 20px;
+}
+/* Sektion 2 - info om portfolio - knap der redirrecter og billede*/
+.portfolio-direkt {
+  width: 100%;
+  height: 600px;
+  background: url('billeder/double_ebbe-min.jpg');
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+.portfolio-knap {
+  background-color: #CC5600;
+  color: #EFA570;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio-knap:hover {
+  background-color: #EFA570;
+  color: #CC5600;
+}
+.portfolio-knap:active {
+  opacity: .7;
+}
+.portfolio-teaser {
+  background-color: #001157;
+  color: #7483C4;
+  padding: 25px;
+  margin-left: 10%;
+  position: relative;
+  top: -120px;
+}
+/* Sektion 3 - om mig sektion. Knap der fører til ny side*/
+.ommig-direkt {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.ommig-direkt > h3, h5 {
+  margin: 0px;
+}
+.ommig-direkt > img, p, a {
+  margin: 0px;
+  padding: 20px;
+}
+.cut-arm {
+  width: 300px;
+  height: auto;
+}
+.ommig-knap {
+  background-color: #001157;
+  color: #7483C4;
+}
+.ommig-knap:hover {
+  background-color: #7483C4;
+  color: #001157;
+}
+.ommig-knap:active {
+ opacity: .7;
+}
+/* Sektion 4*/
+/* Footer */
+.foot {
+color: #2E2A28;
+background-color: #BAB1AA;
+padding: 15px 0px 15px 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+}
+.fodtext {
+  padding: 0px;
+  margin: 0px;
+}
+p.fodtext {
+  font-size: 15px;
+}
+.bund-box {
+  height: 50px;
+  width: auto;
+  background-color: #CC5600;
+  padding: 15px 0px 15px 0px;
+}
+.bund-box-text {
+font-size: 10px;
+text-align: center;
+padding: 10px 0px 10px 0px;
+}
+/* a Links*/
+a.fodlink:link, a.fodlink:visited {
+  color: #2E2A28;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.fodlink:hover, a.fodlink:active {
   opacity: 0.8;
 }
-.navigation li:active {
-  opacity: 0.4;
-}
-.navigation a {
-  color: #D0B08A;
-  font-size: 12px;
-}
-/* Header - styling af header elementet*/
-/* Sektion 1 - styling af - kort præsentation */
-.introduktion {
-  background-color: #3B1505;
-  padding: 35px;
-}
+
+
+
+
 /* Sektion 2 - styling af div med bagrundsbillede */
 .ebbe-baggrund {
   width: 100%;
@@ -95,14 +326,7 @@ button:active{
   align-items: center;
   justify-content: center;
 }
-/* Sektion - 3 - styling af mit arbejde box */
-.mywork {
-  background-color: #5D2108;
-  padding: 35px;
-  margin-left: 20%;
-  position: relative;
-  top: -70px;
-}
+
 /*sektion - 5 - styling af learn more box med knap*/ 
 .learnmore {
   background-color: #1F2417;
@@ -116,47 +340,11 @@ button:active{
   gap: 35px;
   
 }
-
-.contact-me {
-  background-color: #3B1505;
-  font-style: italic;
-  padding: 20px;
-  display: flex;
-  max-height: 300px;
-}
-.contact-me > {
-  flex: 1;
-}
 .ebbe-op{
   width: 270px;
   height: 100%;
   position: relative;
   top: -108px;
-}
-/* billede ved footer */
-.skov-img {
-  width: 100%;
-  height: auto;
-}
-/* styling af footer*/
-.foot {
-  background-color: #D1CBBA;
-  color: #5D2108;
-  padding: 35px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  list-style: none;
-  font-size: 12px;
-  line-height: 1.5;
-}
-.foot ul {
-  list-style: none;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex: 1;
-  padding-inline-start: 0px;
 }
 
 @media (min-width:601px) {
