@@ -245,7 +245,7 @@ justify-content: center;
   .top-text-billede{
     color: #7483C4;
     background-color: rgba(0,0,0,.45);
-    padding: 20px 100% 20px 100%;
+    padding: 20px 30px 20px 30px;
     font-size: 100px;
 }
 }
@@ -254,7 +254,7 @@ justify-content: center;
   .top-text-billede{
     color: #7483C4;
     background-color: rgba(0,0,0,.45);
-    padding: 20px 100% 20px 100%;
+    padding: 20px 50px 20px 50px;
     font-size: 150px;
 }
 }
@@ -466,6 +466,7 @@ justify-content: center;
   font-style: italic;
   margin: 0px;
   padding: 0px;
+  gap: 30px;
 }
 .kontakt-citat > p {
   color: #7483C4;
@@ -551,14 +552,25 @@ a.fodlink:hover, a.fodlink:active {
   opacity: 0.8;
 }
 /* Overskrift*/
-.port-overskrift{
+.port-overskrift-et{
   text-align: center;
-  background-color: #BAB1AA;
+  background-color: #7483C4;
   color: #2E2A28;
   margin: 0px;
   padding: 10px;
-  border-top: solid 2px #2E2A28;
-  border-bottom: solid 2px #2E2A28;
+  padding-top: 30px;
+}
+.port-overskrift-to {
+  text-align: center;
+  background-color: #2E2A28;
+  color: #BAB1AA;
+  margin: 0px;
+  padding: 10px;
+  padding-top: 30px;
+}
+.port-omfang {
+  background-color: #BAB1AA;
+  padding: 20px;
 }
 /*Portfolio side ændringer Del 1*/
 .box-port-holder-et {
@@ -603,25 +615,6 @@ color: #2E2A28;
 .p-port-to {
 color: #BAB1AA;
 }
-/*Portfolio side ændringer Del 3*/
-.box-port-holder-tre {
-  background-color: #BAB1AA;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.htre-port-tre {
-  margin: 0;
-  color: #001157;
-}
-.pic-port {
-  width: 100%;
-}
-.p-port-tre {
-color: #001157;
-}
 @media (min-width:770px) {
   .flex-produkt{
     display: flex;
@@ -645,6 +638,9 @@ color: #001157;
   color: #001157;
 }
 .frederikke > div > p {
+  color: #001157;
+}
+.frederikke > div > h3 {
   color: #001157;
 }
 .mig-knap {
@@ -678,13 +674,14 @@ color: #001157;
 }
 /*Kontakt side del 1*/
 .kontakt-side {
-  padding: 20px;
+  padding: 40px;
   margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .kontakt-side > p, h3 {
+  padding: 10px;
   margin: 0px;
   color: #BAB1AA;
 }
@@ -701,13 +698,19 @@ color: #001157;
 .download-knap:active{
   opacity: 0.8;
 }
+.kontakt-side > a {
+  padding: 10px;
+}
+.billede-koelle {
+  width: 100%;
+}
 @media (min-width:750px) {
   .kontakt-side-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    background-color: #7483C4;
+    justify-content: space-around;
+    background-color: #2E2A28;
   }
 }
