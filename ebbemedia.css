@@ -371,7 +371,7 @@ justify-content: center;
 .ommig-knap:active {
  opacity: .7;
 }
-@media (min-width:980){
+@media (min-width:980px) {
   .portfolio-direkt {
     float: left;
     width: 50%;
@@ -482,7 +482,7 @@ justify-content: center;
     width: 130px;
   }
 }
-@media (min-width:980){
+@media (min-width:980px) {
   .ebbe-op {
     width: 100px;
   }
@@ -627,6 +627,14 @@ color: #BAB1AA;
     flex-direction: row;
   }
 }
+  @media (min-width:810px) {
+    #produkt-pic-id {
+    display: flex;
+    flex-direction: row;
+    }
+
+  }
+
 /*Om mig side del 1*/
 .frederikke > div {
   display: flex;
@@ -668,7 +676,6 @@ color: #BAB1AA;
 }
 .fredeebbe{
   min-width: 350px;
-  color: none;
   max-width: none;
 }
 }
