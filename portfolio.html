@@ -1,156 +1,167 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ebbemedia</title>
-  <link rel="stylesheet" href="ebbemedia.css">
-  <script src="https://kit.fontawesome.com/ebeed9b4da.js" crossorigin="anonymous"></script>
-</head>
-<body>
-   <!-- Header. Her er en topbox og Navigation med "logo" -->
-   <header>
-    <div class="top-box">
-    <nav class="navigation">
-      <a href="index.html" class="logo">EBBEMEDIA</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn">
-      <span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a class="navlink" href="index.html">HJEM</a></li>
-        <li><a class="navlink" href="portfolio.html">PORTFOLIO</a></li>
-        <li><a class="navlink" href="aboutme.html">OM MIG</a></li>
-        <li><a class="navlink" href="contact.html">KONTAKT</a></li>
-      </ul>
-    </nav>
-  </div>
-  </header>
-  <!-- Section 1. Billede og overskrift-->
-  <section class="section-et">
-    <div class="top-billede-port">
-      <h1 class="top-text-billede">PORTFOLIO</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBBEMEDIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;0,800;0,900;1,200;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebeed9b4da.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header hvor logo og navigation indgår-->
+    <header>
+      <nav class="navigation">
+        <a href="index.html" class="logo">EBBEMEDIA</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a class="navlink" href="index.html">HJEM</a></li>
+          <li><a class="navlink" href="portfolio.html">PORTFOLIO</a></li>
+          <li><a class="navlink" href="ommig.html">OM MIG</a></li>
+          <li><a class="navlink" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- div med billede der indeholder en headline-->
+    <div class="headline-pic">
+      <img class="top-pic" src="billeder_new_em/top_portfolio-min.jpg" alt="To gymnastik bolde" style="width: 100%;">
+      <h1 class="overskrift">PORTFOLIO</h1>
     </div>
-  </section>
-  <!-- Section 2. Flexbox med Prudktbilleder-->
-  <section class="port-omfang">
-    <h2 class="port-overskrift-et">Professionelle produktbilleder</h2>
-    <div class="flex-produkt" id="produkt-pic-id">
-      <section>
-        <div class="box-port-holder-et">
-          <h3 class="htre-port-et">Produkter</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/haand_bold-min.jpg" alt="Gymnastikbold i hånd"></div>
-          <p class="p-port-et">Professionelle studie billeder af virksomhedens produkter. Her arbejdes der med jeres produkter eller service. Med simple tricks kan jeres billeder evolutionæres.</p>
+    <!-- sektion med overskrift og tekst -->
+    <section class="top-sec">
+      <h2 class="top-h">MIT SENESTE ARBEJDE</h2>
+      <p class="top-p">Indholdsstrategi, produkt billeder, kode eller nyt design? Kært barn har mange navne.</p>
+      <p class="top-p">Udviklingen af hjemmeside design, indhold og brugervenlighed kan være altafgørende for jeres virksomhed og dets progression.</p>
+    </section>
+    <!-- Flere sektioner med gallerier og beskrivelser af mit arbejde-->
+    <section class="blue-gallery">
+      <h2>ADOBE LIGHTROOM</h2>
+      <p>Tag dine billeder til næste niveau og giv dem liv, med Adobe Lightroom Classic. </p>
+      <p>Fortæl historier og giv dit indhold en helt speciel stemning ved hjælp at dette program.</p>
+      <p>Her vises eksempler på hvordan jeg har skabt en varm og dyster stemning ud af meget neutrale billeder.</p>
+      <!-- galleri lightroom-->
+      <div class="flex-gallery">
+        <div class="gallery">
+            <img src="billeder_new_em/lr_et_foer-min.jpg" alt="Pige før redigering">
         </div>
-      </section>
-      <section>
-        <div class="box-port-holder-et">
-          <h3 class="htre-port-et">Redigering</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/bold_koelle-min.jpg" alt="Gymnastikbold og kølle"></div>
-          <p class="p-port-et">Lad mig vise produkterne fra den bedste side. Med Adobe programmerne Photoshop og Lightroom fremhæves produkterne. Her er intet snyd, udelukkende teoretiske metoder der giver produkterne en autentisk styrke. </p>
+        <div class="gallery">
+            <img src="billeder_new_em/lr_et_efter-min.jpg" alt="Pige efter redigering">
         </div>
-      </section>
-      <section>
-        <div class="box-port-holder-et">
-          <h3 class="htre-port-et">Præsentation</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/to_bold-min.jpg" alt="Gymnastikbold og kølle"></div>
-          <p class="p-port-et">Det laves et bredt udvalg af billeder og sammen besluttes hvilke vi ønsker at arbejde videre med. Denne  korte billede serie er produceret i forbindelse med denne portfolio.</p>
+        <div class="gallery">
+            <img src="billeder_new_em/lr_haandstand_foer-min.jpg" alt="Pige på hænder før">
         </div>
-      </section>
-    </div>
-  </section>
-  <!-- Section 3. Flexbox med illustrator eksempel-->
-    <section class="port-omfang">
-    <h2 class="port-overskrift-to">Illustrasioner</h2>
-    <div class="flex-produkt">
-      <section>
-        <div class="box-port-holder-to">
-          <h3 class="htre-port-to">Før</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/a_f-min.JPG" alt="Andrea og Frederikke"></div>
-          <p class="p-port-to">Gode minde, fede øjeblikke, produkter der skal genoplives. Alt dette kan gøres i Adobe Illustrator. Her er et eksempel på hvordan jeg har forvandlet et godt minde om til en Illustration. Men hvordan er det lige at man laver man billeder om til illustrationer? </p>
+        <div class="gallery">
+            <img src="billeder_new_em/lr_haandstand_efter-min.jpg" alt="Pige på hænder efter">
         </div>
-      </section>
-      <section>
-        <div class="box-port-holder-to">
-          <h3 class="htre-port-to">Efter</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/a-f-illu.png" alt="Andrea og Frederikke"></div>
-          <p class="p-port-to">Mit arbejde i Adobe programmet Illustrator er her præsenteret igennem en illustration, baseret på et fotografi fra en gymnastikevent. Med få simple, dog præcise linjer kan man skabe genkendelige billeder og give det helt nye udtryk. </p>
+        <div class="gallery">
+            <img src="billeder_new_em/lr_to_foer-min.jpg" alt="Pige før redigering">
         </div>
-      </section>
-    </div>
-  </section>
-    <!-- Section 4. Flexbox med editorial eksempel-->
-    <section class="port-omfang">
-    <h2 class="port-overskrift-et">Editorial</h2>
-    <div class="flex-produkt" id="flex-foer">
-      <section>
-        <div class="box-port-holder-et">
-          <h3 class="htre-port-et">Cut outs</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/cut_op_ebbe_min.png" alt="Redigeret Frederikke"></div>
-          <p class="p-port-et">For at give billeder en helt ny dimension klipper jeg objekter ud. Dette bruges til at sammenlægge flere lag og tilføje ekstra detaljer. Her ses et udklip, hvor baggrunden bliver inddraget i håret, for at gøre det mere autentisk. Det kan bruges på plakater eller på hjemmesider for at skabe blikfang.</p>
+        <div class="gallery">
+            <img src="billeder_new_em/lr_to_efter-min.jpg" alt="Pige efter redigering">
         </div>
-      </section>
-      <section>
-        <div class="box-port-holder-et">
-          <h3 class="htre-port-et">Photoshop</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/double_ebbe-min.jpg" alt="Frederikke"></div>
-          <p class="p-port-et">Billeder som dette er produceret i programmet Photoshop. Her arbejder jeg med lag og tilføjer produkter eller personer af flere omgange. Resultatet bliver forskelligt alt efter hvilken stemning man ønsker. </p>
+      </div>
+    </section>
+      <!-- galleri og sektion photoshop-->
+      <section class="org-gallery">
+      <h2>ADOBE PHOTOSHOP</h2>
+      <p>Kreativitet har mange former. Hvordan bevæger man folk igennem en skærm? </p>
+      <p>Jeg arbejder meget med at opstille billeder, som har stærke og kreative udtryk. Dette kan gøres selv ved med meget simple opsætninger.</p>
+      <div class="flex-gallery">
+        <div class="gallery">
+            <img src="billeder_new_em/ps_mark_et-min.jpg" alt="Pige på mark">
         </div>
-      </section>
-    </div>
-  </section>
-     <!-- Section 5. Flexbox med mit arbejde for tidligere klienter-->
-  <section class="port-omfang">
-    <h2 class="port-overskrift-to">Fyns Minirep</h2>
-    <div class="flex-produkt">
-      <section>
-        <div class="box-port-holder-to">
-          <h3 class="htre-port-to">Design af logo</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/minirep-logo.png" alt="Logo design"></div>
-          <p class="p-port-to">En af mine første klienter var Fyns Minirep. I sammenspil med holdes retning lavede jeg et logo, som ville passe til deres Instagram profil. Logoet er lavet med inspiration i holdes tema og deres opvisnings dragter, hvor farverne går igen flere steder.</p>
+        <div class="gallery">
+            <img src="billeder_new_em/ps_mark_to-min.jpg" alt="på mark">
         </div>
-      </section>
-      <section>
-        <div class="box-port-holder-to">
-          <h3 class="htre-port-to">Indhold</h3>
-          <div class="pic-port-holder"><img class="pic-port" src="billeder/minirep-hold.png" alt="Instagram"></div>
-          <p class="p-port-to">Indholdet på deres profil bliver ligeledes også retningsbestem ud fra holdes tema og farvevalg. Det hele går igen og danner ramme om deres arbejde. Da deres holdtøj blev produceret ønskede de at bruge logoet. Eftersom jeg har arbejdet med logoet i Adobe Illustrator, kan jeg eksportere filer til både web og tryk. </p>
+        <div class="gallery">
+            <img src="billeder_new_em/ps_sofa-min.jpg" alt="Pige flere gange i en sofa">
         </div>
-      </section>
-    </div>
-  </section>
-       <!-- Section 6. Flexbox med mit arbejde for tidligere klienter-->
-  <section class="port-omfang">
-    <h2 class="port-overskrift-et">TSA acrolife</h2>
-    <div class="flex-produkt">
-      <section>
-        <div class="box-port-holder-et">
-          <h3 class="htre-port-et">Video produktion</h3>
-          <iframe width="450" height="315" src="https://www.youtube.com/embed/loSyggjM7Dw"> </iframe>
-          <p class="p-port-et">TSA acrolife var et hold jeg lavede indhold for. Til et show lavede jeg en promo video af deres opvisning, som blev delt på alle sociale medier. Denne video er produceret med optagelser fra forskellige vinkler, et onetake, zoom, panorering og dynamisk klipning. </p>
+        <div class="gallery">
+            <img src="billeder_new_em/ps_spejl-min.jpg" alt="Pige i et spejl">
         </div>
-      </section>
-    </div>
-  </section>
-  <!-- Footer. Indeholder en almindelig footer og bund, hvor der kan linkes til copyright og privacy policy-->
-  <footer>
-    <div class="foot-alm">
+        <div class="gallery">
+            <img src="billeder_new_em/ps_ben_foer-min.jpg" alt="Krop der poserer før redigering">
+        </div>
+        <div class="gallery">
+            <img src="billeder_new_em/ps_ben_efter-min.jpg" alt="Krop der poserer efter redigering">
+        </div>
+      </div>
+    </section>
+     <!-- galleri og sektion illustrator-->
+    <section class="blue-gallery">
+      <h2>ADOBE ILLUSTRATOR</h2>
+      <p>Skab minder, kreer plakater og meget mere. Illustrator er et utrolig bredt værktøj.</p>
+      <p>Her udfører jeg tegnearbejde og designs til logo, klistermærker og alverdens andre kreative projekter.</p>
+      <p>Har du en ide, så skal vi nok få den realiseret.</p>
+      <div class="flex-gallery">
+        <div class="gallery">
+            <img src="billeder_new_em/ai_foer-min.jpg" alt="To piger før redigering">
+        </div>
+        <div class="gallery">
+            <img src="billeder_new_em/ai_efter-min.jpg" alt="To piger efter redigering og tegning">
+        </div>
+    </section>
+    <!-- galleri og sektion InDesign-->
+    <section class="org-gallery">
+      <h2>ADOBE INDESIGN</h2>
+      <p>InDesign er programmet der kan tage jeres formidling til næste niveau.</p>
+      <p>I dette program laver jeg rapporter, flyers, folders, visitkort og meget mere. </p>
+      <p>Ved at følge de samme designs og principper fra jeres hjemmeside, går alt op i en højere enhed.</p>
+      <div class="flex-gallery">
+        <div class="gallery">
+            <img src="billeder_new_em/ind_rap_et-min.jpg" alt="Eksempel på rapport">
+        </div>
+        <div class="gallery">
+            <img src="billeder_new_em/ind_rap_to-min.jpg" alt="Eksempel på rapport">
+      </div>
+    </section>
+    <!-- galleri og sektion XD-->
+    <section class="blue-gallery">
+      <h2>ADOBE XD</h2>
+      <p>Hvor du massere ideer til din hjemmeside, men har svært ved at få det samlet?</p>
+      <p>Med adobe XD laver jeg designs, som kan testkøres, moodboards, styletiles. </p>
+      <p>Alt bliver samlet et sted, og der kan hele tiden udvikles på dit design.</p>
+      <div class="flex-gallery">
+        <div class="gallery">
+            <img src="billeder_new_em/xd_mood.jpg" alt="Moodboard lavet i adobe XD">
+        </div>
+        <div class="gallery">
+            <img src="billeder_new_em/xd_mock.jpg" alt="Mockup lavet i adobe XD">
+        </div>
+    </section>
+    <!-- galleri og sektion Tidligere klienter-->
+    <section class="org-gallery">
+      <h2>TIDLIGERE KLIENTER</h2>
+      <p>Af tidligere klienter har jeg arbejdet med Fyns MiniRep, hvor jeg lavede indhold til deres sociale medier samt designede deres nuværende logo.</p>
+      <p>Derudover har jeg filmet og redigeret en promo video af holdet TSA acrolife, som de bruger til at søge sponsorater. </p>
+      <div class="flex-gallery">
+        <div class="gallery">
+            <img src="billeder_new_em/minirep_hold-min.jpg" alt="Gymnastik hold med logo på trøjerne">
+        </div>
+        <div class="gallery">
+            <img src="billeder_new_em/tsa_pic.jpg" alt="Hold billede af TSA acro">
+      </div>
+      <iframe width="450" height="315" src="https://www.youtube.com/embed/loSyggjM7Dw"> </iframe>
+    </section>
+    <footer class="foot">
       <h3 class="fodtext">EBBEMEDIA</h3>
-      <p class="fodtext">
-        <a class="fodlink" href="index.html">Hjem</a>
-        <a class="fodlink" href="portfolio.html">Portfolio</a>
-        <a class="fodlink" href="aboutme.html">Om mig</a>
-        <a class="fodlink" href="contact.html">Kontakt</a>
+      <p class="fodtext">          
+        <a class="fodlink" href="index.html">HJEM</a>
+        <a class="fodlink" href="portfolio.html">PORTFOLIO</a>
+        <a class="fodlink" href="ommig.html">OM MIG</a>
+        <a class="fodlink" href="kontakt.html">KONTAKT</a>
       </p>
       <figure class="fodtext">
         <a class="fodlink" href="https://www.linkedin.com/in/frederikke-ebbe/"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
         <a class="fodlink" href="https://www.instagram.com/frederikke_ebbe/"><i class="fa-brands fa-instagram fa-xl"></i></a>
         <a class="fodlink" href="https://www.pinterest.dk/frederikkeebbe/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
       </figure>
-    </div>
-    <div class="bund-box-alm">
-      <p class="bund-box-text">Privacy policy / site by ebbemedia.dk / contact febbe8@gmail.com</p> 
-    </div>
-  </footer>
-</body>
+      <p class="bund-text">Privacy policy / site by ebbemedia.dk / contact febbe8@gmail.com</p> 
+    </footer>
+  </body>
 </html>

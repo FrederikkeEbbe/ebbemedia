@@ -1,106 +1,146 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ebbemedia</title>
-  <link rel="stylesheet" href="ebbemedia.css">
-  <script src="https://kit.fontawesome.com/ebeed9b4da.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBBEMEDIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;0,800;0,900;1,200;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebeed9b4da.js" crossorigin="anonymous"></script>
+  </head>
   <body>
-    <!-- Header. Her er en topbox og Navigation med "logo" -->
+    <!-- Header hvor logo og navigation indgår-->
     <header>
-      <div class="top-box">
       <nav class="navigation">
         <a href="index.html" class="logo">EBBEMEDIA</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <input class="menu-btn" type="checkbox" id="menu-btn">
         <label class="menu-icon" for="menu-btn">
         <span class="navicon"></span></label>
         <ul class="menu">
           <li><a class="navlink" href="index.html">HJEM</a></li>
           <li><a class="navlink" href="portfolio.html">PORTFOLIO</a></li>
-          <li><a class="navlink" href="aboutme.html">OM MIG</a></li>
-          <li><a class="navlink" href="contact.html">KONTAKT</a></li>
+          <li><a class="navlink" href="ommig.html">OM MIG</a></li>
+          <li><a class="navlink" href="kontakt.html">KONTAKT</a></li>
         </ul>
       </nav>
-    </div>
     </header>
-    <!-- Sektion 1. Top billede med navn -->
-    <section class="section-et">
-        <div class="top-billede">
-          <h1 class="top-text-billede">EBBEMEDIA</h1>
-        </div>
-    </section>
-    <!-- Sektion 2. Portfolio knap på billede. Med text nedenunder. + baggrundslag-->
-    <section>
-       <div class="portfolio-direkt">
-        <a href="portfolio.html" class="portfolio-knap">PORTFOLIO</a>
-        </div>
-    </section>
-    <div class="bold-lag">
-       <section>
-         <article class="portfolio-teaser">
-           <h3>Multimedie design</h3>
-           <p class="port-text">Indholdsstrategi, produkt billeder, kode eller nyt design? Kært barn har mange navne. Udviklingen af hjemmeside design, indhold og brugervenlighed kan være altafgørende for jeres virksomhed og dets progression. </p>
-           <p class="port-text">Hos Ebbemedia ønsker vi et tæt samarbejde med passionerede virksomheder, ledere og medarbejdere i Danmark. Vi sætter fokus på ærlighed, værdier og mål igennem et gennemarbejdet design, som med garanti vil gavne jeres målgruppe.</p>
-           <p class="port-text">Ebbemedia er for dig, som brænder for at levere gode øjeblikke hos jeres målgruppe. Sammen kan vi skabe fantastisk indhold, som viser jer, fra jeres bedste side. </p>
-        </article>
-      </section>
+    <!-- div med billede der indeholder en headline-->
+    <div class="headline-pic">
+      <img class="top-pic" src="billeder_new_em/top_index-min.jpg" alt="To hænder der holder en bold" style="width: 100%;">
+      <h1 class="overskrift">MULTIMEDIA</h1>
     </div>
-      <!-- Sektion 3. Om mig sektion. billeder, kanpper og baggrund-->
-    <div class="baggrunds-lag">
-      <section class="ommig-direkt">
-        <div class="ommig-lag">
-           <h3>Frederikke Ebbe</h3>
-           <h5>Multimedie design studerende</h5>
-          <img class="cut-arm" src="billeder/cut_arm-min.png" alt="Frederikke Ebbe">
-          <p> Skaberen bag dette brand er Frederikke Ebbe. En ung studerende med en brændende passion for bevægelse, leg og fantasi. Med mine mange års undervisnings erfaring af børn og unge i gymnastik, leg og dans, er jeg blevet inspireret af den konstante nysgerrighed, som unge sind besidder. Læs mere om mig og hvad jeg kan gøre for dig.</p>
-           <a href="aboutme.html" class="ommig-knap">OM MIG </a>
-        </div>
-      </section>
+    <!-- sektion med overskrift og tekst -->
+    <section class="top-sec">
+      <h2 class="top-h"> MULTIMEDIE DESIGN</h2>
+      <p class="top-p"> Ebbemedia er kreeret på baggrund af et simpelt formål. At skabe unikke designs, som omfavner jeres værdier, mål og visioner.</p>
+      <p class="top-p"> Kreativitet, ærlighed og personlighed er de bærende søjler, som hjemmesiden bygges op omkring.</p>
+    </section>
+    <!-- div med billede og knap-->
+    <div class="knap-pic">
+      <img src="billeder_new_em/ps_double-min.jpg" alt="Photoshop billede med en pige" style="width: 100%;">
+      <button class="knap-in-pic" onclick="document.location='portfolio.html'">PORTFOLIO</button>
     </div>
-    <!-- Sektion 4. Kontakt lag, med produktbilleder-->
-    <section class="kontakt-sec">
-      <article class="kontakt-info">
-        <h4> Kreativ proces</h4>
-        <p> Skabelsen af brugervenligt indhold er bygget op af både kreativitet og struktur. Ud over at have en motiveret relation med jer og jeres virksomhed, arbejder jeg i tæt kontakt med jeres målgruppe.</p>
-        <p>  Et tæt samarbejde er til for at give dem den bedste oplevelse når de besøger jeres hjemmeside eller ser jeres indhold. Sammen med dem udvælger vi nøje den bedste løsning.</p>
-        <a href="portfolio.html" class="kontakt-orange">LÆS MERE</a>
-      </article>
-      <article class="kontakt-link">
-        <h4> Find mig</h4>
-        <p> Skal vi indgå et stærkt samarbejde du aldrig vil glemme, så skriv en mail og jeg vender tilbage hurtigst muligt.</p>
-        <p> Email: febbe8@gmail.com </p>
-        <p> Skal vi tage en snak om jeres muligheder i fremtiden? Flere kontakt informationer findes her.</p>
-        <a href="contact.html" class="kontakt-blaa">KONTAKT</a>
-      </article>
+    <!-- sektion med overskrift og tekst -->
+    <section class="kant-sec">
+      <h2 class="kant-h">FREDERIKKE EBBE</h2>
+      <p class="kant-p">Skaberen bag dette brand er Frederikke Ebbe. En ung studerende med en brændende passion for bevægelse, leg og fantasi.</p>
+      <p class="kant-p">Med mine mange års undervisnings erfaring af børn og unge i gymnastik, leg og dans, er jeg blevet inspireret af den konstante nysgerrighed, som unge sind besidder. </p>
+      <p class="kant-p">Læs mere om hvem jeg er og hvad jeg kan gøre for dig.</p>
     </section>
-    <section>
-      <div class="kontakt-citat">
-        <img class="ebbe-op" src="billeder/cut_op_ebbe_min.png" alt="Pige ser på knap">
-        <p class="citat">"Denne præsentationsportfolio repræsenterer mig og mit arbejde jeg har lavet under og inden uddannelsesforløbet på UCL. Den skal ses og nydes af nysgerrige øjne”</p>
+    <!-- div med billede og knap-->
+    <div class="gradient">
+      <button class="i-gradient" onclick="document.location='ommig.html'">OM MIG</button>
+      <img class="i-gradient" id="ps-gradient" src="billeder_new_em/ps_gradient_arm.png" alt="Pige der danser">
+    </div>
+    <!-- hr indsat her for kreativt design-->
+    <hr class="orange-linje">
+    <!-- sektion med overskrift, text og ikoner -->
+    <section class="adobe-sec">
+      <h2 class="adobe-h"> KREATIV PROCES</h2>
+      <p class="adobe-p">Skabelsen af brugervenligt indhold er bygget op af både kreativitet og struktur. Ud over at have en motiveret relation med jer og jeres virksomhed, arbejder jeg i tæt kontakt med jeres målgruppe. </p>
+      <p class="adobe-p">Et tæt samarbejde er til for at give dem den bedste oplevelse når de besøger jeres hjemmeside eller ser jeres indhold. Sammen med dem udvælger vi nøje den bedste løsning.</p>
+      <h2 class="adobe-h"> ADOBE</h2>
+      <p class="adobe-p"> Adobes programmer er mine primære værktøjer, som kan bruges til alle typer af projekter.</p>
+      <!-- en slider med forskellige adobe logos-->
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide"> 
+            <img src="adobe-icon/png/008-animate.png" alt="adobe animate logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/001-premiere-pro.png" alt="adobe premiere-pro logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/002-illustrator.png" alt="adobe illustrator logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/003-photoshop.png" alt="adobe photoshop logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/004-indesign.png" alt="adobe InDesign logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/005-after-effects.png" alt="adobe after effects logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/006-xd.png" alt="adobe XD logo" height="64" width="64">
+          </div>
+          <div class="slide"> 
+            <img src="adobe-icon/png/007-photoshop-lightroom.png" alt="adobe lightroom logo" height="64" width="64">
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Footer. Indeholder en almindelig footer og bund, hvor der kan linkes til copyright og privacy policy-->
-    <footer>
-      <div class="foot">
-        <h3 class="fodtext">EBBEMEDIA</h3>
-        <p class="fodtext">
-          <a class="fodlink" href="index.html">Hjem</a>
-          <a class="fodlink" href="portfolio.html">Portfolio</a>
-          <a class="fodlink" href="aboutme.html">Om mig</a>
-          <a class="fodlink" href="contact.html">Kontakt</a>
-        </p>
-        <figure class="fodtext">
-          <a class="fodlink" href="https://www.linkedin.com/in/frederikke-ebbe/"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
-          <a class="fodlink" href="https://www.instagram.com/frederikke_ebbe/"><i class="fa-brands fa-instagram fa-xl"></i></a>
-          <a class="fodlink" href="https://www.pinterest.dk/frederikkeebbe/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
-        </figure>
+    <!-- hr indsat her for kreativt design-->
+    <hr class="orange-linje">
+    <!-- div med kreativt layout-->
+    <div class="blue-box">
+      <p class="mmd-milk">MULTIMEDIE DESIGN</p>
+      <p class="mmd-work">MULTIMEDIE DESIGN</p>
+      <p class="mmd-milk">MULTIMEDIE DESIGN</p>
+      <p class="mmd-work">MULTIMEDIE DESIGN</p>
+      <p class="mmd-milk">MULTIMEDIE DESIGN</p>
+      <p class="mmd-work">MULTIMEDIE DESIGN</p>
+      <p class="mmd-milk">MULTIMEDIE DESIGN</p>
+      <p class="mmd-work">MULTIMEDIE DESIGN</p>
+      <p class="mmd-milk">MULTIMEDIE DESIGN</p>
+      <p class="mmd-work">MULTIMEDIE DESIGN</p>
+      <p class="mmd-milk">MULTIMEDIE DESIGN</p>
+    </div>
+    <!-- sektion med find mig info-->
+    <section class="top-sec">
+      <h2 class="top-h">FIND MIG</h2>
+      <p class="top-p">Skal vi indgå et stærkt samarbejde du aldrig vil glemme, så skriv en mail og jeg vender tilbage hurtigst muligt.</p>
+      <p class="top-p">febbe8@gmail.com</p>
+      <p class="top-p">Las os tage en snak om jeres muligheder i fremtiden? </p>
+      <p class="top-p">Flere kontakt informationer findes her.</p>
+      <div class="knap-holder">
+        <button class="knap-center" onclick="document.location='kontakt.html'">KONTAKT</button>
       </div>
-      <div class="bund-box">
-        <p class="bund-box-text">Privacy policy / site by ebbemedia.dk / contact febbe8@gmail.com</p> 
-      </div>
+    </section>
+    <!-- Div med billede i bunden, der kigger på på knappen-->
+    <div class="kig-op">
+      <img class="se-op" src="billeder_new_em/ps_se_op.png" alt="Pige der kigger op">
+      <div class="blue-line"></div>
+    </div>
+    <!-- footer med logo, links til undersider, sociale links og email i bund-->
+    <footer class="foot">
+      <h3 class="fodtext">EBBEMEDIA</h3>
+      <p class="fodtext">          
+        <a class="fodlink" href="index.html">HJEM</a>
+        <a class="fodlink" href="portfolio.html">PORTFOLIO</a>
+        <a class="fodlink" href="ommig.html">OM MIG</a>
+        <a class="fodlink" href="kontakt.html">KONTAKT</a>
+      </p>
+      <figure class="fodtext">
+        <a class="fodlink" href="https://www.linkedin.com/in/frederikke-ebbe/"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
+        <a class="fodlink" href="https://www.instagram.com/frederikke_ebbe/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a class="fodlink" href="https://www.pinterest.dk/frederikkeebbe/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+      </figure>
+      <p class="bund-text">Privacy policy / site by ebbemedia.dk / contact febbe8@gmail.com</p> 
     </footer>
   </body>
 </html>

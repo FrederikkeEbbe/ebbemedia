@@ -1,0 +1,482 @@
+/* generelle settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'headfont';
+  src: url(fonts/milkalte-font/Milkalte-4BmnK.otf)
+  }
+/* generelle styles */
+body {
+font-family: 'Work Sans', sans-serif;
+background-color: #d3c9c1;
+color: #2e2a28;
+}
+/* heading fonts. h1, h2 og h4 i worksans. h3 til footer og nav i headfont. */
+h1, h2, h4 {
+  font-family: 'Work Sans', sans-serif;
+}
+h1 {
+  font-size: 40px;
+  color: #ca5827;
+  font-weight: 900;
+  font-style: italic;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+}
+h3 {
+  font-family: 'headfont';
+  font-size: 36px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+}
+p {
+  font-size: 20px;
+}
+/* Knapper hertil styles */
+button {
+  background-color: #2E2A28;
+  border: none;
+  color: #7483C4;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  padding: 15px 30px;
+  min-width: 200px;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  background-color: #7483C4;
+  color: #2e2a28;
+  opacity: 1;
+}
+/* Navigation*/
+.navigation {
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;
+}
+.navigation ul {
+  list-style: none;
+  overflow: hidden;
+}
+.navigation .logo {
+  display: flex;
+  float: left;
+  font-size: 2em;
+  text-decoration: none;
+  font-family: headfont;
+  margin-left: 20px;
+}
+/* burger menuen */
+.navigation .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  font-weight: 700;
+}
+/* burger menu ikonet */
+.navigation .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  float: right;
+}
+/* Den midterste linje + omkring*/
+.navigation .menu-icon .navicon {
+  background: #2E2A28;
+  display: flex;
+  height: 5px;
+  position: relative;
+  transition: .2s ease-out;
+  width: 50px;
+  border-radius: 25px;
+}
+/* De yderste linjer*/
+.navigation .menu-icon .navicon:before,
+.navigation .menu-icon .navicon:after {
+  background: #2E2A28;
+  content: '';
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  border-radius: 25px;
+}
+/*afstand imellem top og bund ikoner*/
+.navigation .menu-icon .navicon:before {
+  top: 15px;
+}
+.navigation .menu-icon .navicon:after {
+  top: -15px;
+}
+/* burger menu knap */
+.navigation .menu-btn {
+  display: none;
+}
+.navigation .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* Styleing af link så de ikke er grimme*/
+.navigation li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.navigation li a:hover,
+.navigation .menu-btn:hover {
+  background-color: #7483c4;
+}
+a.navlink:link, a.navlink:visited {
+  color: #2E2A28;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+a.navlink:active {
+  opacity: 0.6;
+}
+a.logo:link, a.logo:visited {
+  color: #2E2A28;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.logo:hover {
+  background-color: #7483C4;
+}
+a.logo:active {
+  opacity: 0.6;
+}
+/* Responsiv menubar */
+@media (min-width: 785px) {
+  .navigation li {
+    float: left;
+  }
+  .navigation li a {
+    padding: 20px 30px;
+  }
+  .navigation .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navigation .menu-icon {
+    display: none;
+  }
+}
+/* top billeder med overskrift */
+.headline-pic {
+  position: relative;
+  text-align: center;
+}
+.overskrift {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* top sektion med tekst og side border */
+.top-sec {
+  margin: 60px 25px;
+  padding: 0px 0px 0px 25px;
+  border-left: 15px solid #7483c4;
+}
+.top-h, .top-p {
+  padding-bottom: 40px;
+}
+/* billede med knap i midten*/
+.knap-pic {
+  position: relative;
+  text-align: center;
+}
+.knap-in-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Sektion med hjørne kanter*/
+.kant-sec {
+  margin: 60px 25px;
+  padding: 15px;
+  box-shadow:
+    -50px -50px 0 -48px #2E2A28,
+    50px 50px 0 -48px #2E2A28;
+}
+.kant-sec:hover {
+  margin: 60px 25px;
+  padding: 15px;
+  box-shadow:
+    -50px -50px 0 -46px #ca5827,
+    50px 50px 0 -46px #ca5827;
+}
+.kant-h, .kant-p {
+  padding: 15px;
+  padding-bottom: 20px;
+}
+/* billede med knap + baggrunds billede*/
+.gradient {
+  position: relative;
+  text-align: center;
+  background: url(billeder_new_em/gradient-min.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.i-gradient {
+  padding: 15px;
+  margin: 25px;
+}
+#ps-gradient {
+  max-width: 250px;
+  height: auto;
+}
+button.i-gradient {
+  padding: 14px 30px;
+  margin-top: 40px;
+}
+/*styling af orange hr*/
+.orange-linje {
+  margin: 60px 0px;
+  height: 15px;
+  width: 80%;
+  border-width: 0;
+  color: #ca5827;
+  background-color: #ca5827;
+}
+/* Sektion med adobe program ikoner*/
+.adobe-sec {
+  margin: 25px;
+}
+.adobe-h, .adobe-p {
+  padding: 15px;
+}
+.adobe-h {
+  padding-bottom: 0px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(150px * 8));
+  }
+  100% {
+    transform: translateX(calc(-150px * 8));
+  }
+}
+.slider {
+  height: 64px;
+  margin: 20px 0px 20px 20px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(8 * 150px);
+}
+.slider .slide {
+  height: 64px;
+  width: 150px;
+}
+/* Sektion med multimedie design skrift. Kreativt layout*/
+.blue-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #7483C4;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+.mmd-work {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.mmd-milk {
+  font-family: 'headfont';
+  font-size: 35px;
+  margin-top: -5px;
+  margin-bottom: -15px;
+}
+/* Sektion med kontakt mig og knap*/
+.knap-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+/* Billder der kigger op på nærmeste knap*/
+.kig-op {
+  display: flex;
+  flex-direction: column;
+}
+.blue-line{
+  width: auto;
+  height: 70px;
+  background-color: #7483C4;
+}
+.se-op {
+  max-width: 200px;
+  height: auto;
+}
+/* footer */
+.foot {
+  padding: 40px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  }
+  p.fodtext {
+    font-size: 8.5px;
+    font-weight: 800;
+  }
+  a.fodlink:link, a.fodlink:visited {
+    color: #2E2A28;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  a.fodlink:hover, a.fodlink:active {
+    opacity: 0.8;
+  }
+  p.bund-text {
+    font-size: 8px;
+    margin-top: 28px;
+  }
+/* OM MIG side*/
+/*billede med tekst på*/
+.navn-orange
+{
+  color: #ca5827;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Kontakt side*/
+/* 3 boxe med kontakt info*/
+.contain-kontakt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.kontakt-box{
+  background-color: #7483C4;
+  margin: 20px;
+  padding: 40px;
+  min-width: 350px;
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+}
+/* Kontakt formular*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ca5827;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #d3c9c1;
+  color: #2E2A28;
+  font-family: 'Work Sans';
+}
+input[type=submit] {
+  background-color: #2E2A28;
+  color: #7483C4;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Work Sans';
+  font-weight: 800;
+  font-style: italic;
+  font-size: 20px;
+  min-width: 200px;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+input[type=submit]:active {
+  opacity: 1;
+  background-color: #7483C4;
+  color: #2e2a28;
+}
+.form-container {
+  padding: 20px;
+  font-family: 'Work Sans';
+  font-weight: 800;
+  font-style: italic;
+  font-size: 30px;
+}
+/*Portfolio side med gallrier*/
+.blue-gallery {
+  background-color: #7483C4;
+  padding: 60px 0px;
+}
+.blue-gallery > h2, .blue-gallery > p{
+  padding: 20px 60px;
+}
+div.gallery img {
+  max-width: 200px;
+  height: auto;
+}
+.flex-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.gallery{
+  padding: 10px;
+}
+.org-gallery {
+  padding: 60px 0px;
+}
+.org-gallery > h2, .org-gallery > p{
+  padding: 20px 60px;
+}
+
+
+
+

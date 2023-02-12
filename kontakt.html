@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBBEMEDIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;0,800;0,900;1,200;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebeed9b4da.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header hvor logo og navigation indgår-->
+    <header>
+      <nav class="navigation">
+        <a href="index.html" class="logo">EBBEMEDIA</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a class="navlink" href="index.html">HJEM</a></li>
+          <li><a class="navlink" href="portfolio.html">PORTFOLIO</a></li>
+          <li><a class="navlink" href="ommig.html">OM MIG</a></li>
+          <li><a class="navlink" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- div med billede der indeholder en headline-->
+    <div class="headline-pic">
+      <img class="top-pic" src="billeder_new_em/top_kontakt-min.jpg" alt="Gymnastik bold og køller" style="width: 100%;">
+      <h1 class="overskrift">KONTAKT</h1>
+    </div>
+    <!-- sektion med overskrift og tekst -->
+    <section class="top-sec">
+      <h2 class="top-h">KONTAKT INFORMATION</h2>
+      <p class="top-p">Vil du kontakte mig? Så find mine kontaktinformationer her.</p>
+    </section>
+    <!-- 3 kasser med kontaktinformation -->
+    <div class="contain-kontakt">
+      <div class="kontakt-box">
+        <p>+45 30 36 44 63</p>
+      </div>
+      <div class="kontakt-box">
+        <p>FEBBE8@GMAIL.COM</p>
+      </div>
+      <div class="kontakt-box">
+        <a class="fodlink" href="https://www.linkedin.com/in/frederikke-ebbe/"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
+        <a class="fodlink" href="https://www.instagram.com/frederikke_ebbe/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a class="fodlink" href="https://www.pinterest.dk/frederikkeebbe/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+      </div>
+    </div>
+    <!-- Kontaktformular-->
+    <section class="top-sec">
+      <h2 class="top-h">KONTAKT FORMULAR</h2>
+      <p class="top-p">Skal jeg kontakte dig? Så udfyld denne formular.</p>
+    </section>
+    <div class="form-container">
+      <form action="/action_page.php">
+        <label for="fname">FORNAVN</label>
+        <input type="text" id="fname" name="firstname" placeholder="Hans...">
+
+        <label for="lname">EFTERNAVN</label>
+        <input type="text" id="lname" name="lastname" placeholder="Hansen...">
+
+        <label for="lname">E-MAIL</label>
+        <input type="text" id="lname" name="lastname" placeholder="hanshansen@email.dk">
+
+        <label for="subject">EMNE</label>
+        <textarea id="subject" name="subject" placeholder="Skriv dit spørgsmål her" style="height:200px"></textarea>
+
+        <input type="submit" value="INDSEND">
+      </form>
+    </div>
+    <footer class="foot">
+      <h3 class="fodtext">EBBEMEDIA</h3>
+      <p class="fodtext">          
+        <a class="fodlink" href="index.html">HJEM</a>
+        <a class="fodlink" href="portfolio.html">PORTFOLIO</a>
+        <a class="fodlink" href="ommig.html">OM MIG</a>
+        <a class="fodlink" href="kontakt.html">KONTAKT</a>
+      </p>
+      <figure class="fodtext">
+        <a class="fodlink" href="https://www.linkedin.com/in/frederikke-ebbe/"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
+        <a class="fodlink" href="https://www.instagram.com/frederikke_ebbe/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a class="fodlink" href="https://www.pinterest.dk/frederikkeebbe/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+      </figure>
+      <p class="bund-text">Privacy policy / site by ebbemedia.dk / contact febbe8@gmail.com</p> 
+    </footer>
+  </body>
+</html>
